@@ -25,6 +25,8 @@ class FilterVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
         updateFilterMenu()
         
         
@@ -78,11 +80,11 @@ class FilterVC: UIViewController {
         }
         
         switch filter.price {
-        case 0: priceFilterBtn.setTitle("Precio: Todos", forState: .Normal )
-        case 1: priceFilterBtn.setTitle("Precio: Menor de COP 11.000", forState: .Normal )
-        case 2: priceFilterBtn.setTitle("Precio: Menor de COP 21.000", forState: .Normal )
-        case 3: priceFilterBtn.setTitle("Precio: Menor de COP 51.000", forState: .Normal )
-        default: priceFilterBtn.setTitle("Precio: Todos", forState: .Normal )
+        case 0: priceFilterBtn.setTitle("Cover: Todos", forState: .Normal )
+        case 1: priceFilterBtn.setTitle("Cover: Gratis COP 0.00", forState: .Normal )
+        case 2: priceFilterBtn.setTitle("Cover: Menor de COP 21.000", forState: .Normal )
+        case 3: priceFilterBtn.setTitle("Cover: Menor de COP 51.000", forState: .Normal )
+        default: priceFilterBtn.setTitle("Cover: Todos", forState: .Normal )
         }
         
         switch filter.distance {

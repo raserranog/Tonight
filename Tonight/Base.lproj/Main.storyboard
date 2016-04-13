@@ -359,9 +359,24 @@
                                     <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vuw-cD-WvE">
                                         <rect key="frame" x="556" y="20" width="44" height="44"/>
                                         <subviews>
+                                            <view alpha="0.85000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D74-mo-Wdq" customClass="CircleView" customModule="Tonight" customModuleProvider="target">
+                                                <rect key="frame" x="5" y="4" width="35" height="35"/>
+                                                <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="R1G-Nh-wHl"/>
+                                                    <constraint firstAttribute="width" constant="44" id="nEB-4d-4WL"/>
+                                                    <constraint firstAttribute="width" secondItem="D74-mo-Wdq" secondAttribute="height" multiplier="1:1" id="y4b-h0-tUI"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="nEB-4d-4WL"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filtro" translatesAutoresizingMaskIntoConstraints="NO" id="NSB-uL-M3G">
                                                 <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" secondItem="NSB-uL-M3G" secondAttribute="height" multiplier="1:1" id="2gx-li-ePh"/>
                                                     <constraint firstAttribute="height" constant="44" id="G1e-Tf-Hom"/>
                                                     <constraint firstAttribute="width" constant="44" id="c7g-ke-8xG"/>
                                                 </constraints>
@@ -377,6 +392,8 @@
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="NSB-uL-M3G" secondAttribute="bottom" id="0a2-Ah-N3K"/>
                                             <constraint firstAttribute="height" constant="44" id="6Aw-zD-0GE"/>
+                                            <constraint firstItem="D74-mo-Wdq" firstAttribute="centerY" secondItem="NSB-uL-M3G" secondAttribute="centerY" id="UOd-3U-X4K"/>
+                                            <constraint firstItem="D74-mo-Wdq" firstAttribute="centerX" secondItem="NSB-uL-M3G" secondAttribute="centerX" id="eZE-SO-XkC"/>
                                             <constraint firstItem="NSB-uL-M3G" firstAttribute="top" secondItem="vuw-cD-WvE" secondAttribute="top" id="mAf-lK-4nq"/>
                                             <constraint firstItem="NSB-uL-M3G" firstAttribute="leading" secondItem="vuw-cD-WvE" secondAttribute="leading" id="n7w-ak-pT6"/>
                                             <constraint firstAttribute="width" constant="44" id="x8x-Bg-UPi"/>
@@ -564,7 +581,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pkj-dc-QfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="732"/>
+            <point key="canvasLocation" x="510" y="560"/>
         </scene>
         <!--FilterVC-->
         <scene sceneID="dXA-7f-1Mc">
@@ -757,23 +774,45 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ITA-oX-n6U" customClass="CircleView" customModule="Tonight" customModuleProvider="target">
+                                <rect key="frame" x="260" y="63" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="lSn-Aw-Yyw"/>
+                                    <constraint firstAttribute="width" secondItem="ITA-oX-n6U" secondAttribute="height" multiplier="1:1" id="ot3-0r-3Gr"/>
+                                </constraints>
+                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filtro" translatesAutoresizingMaskIntoConstraints="NO" id="Rg9-iP-QAh">
                                 <rect key="frame" x="250" y="53" width="100" height="100"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="Rg9-iP-QAh" secondAttribute="height" multiplier="1:1" id="0Te-Cx-6Lw"/>
                                     <constraint firstAttribute="height" constant="100" id="3e2-aK-Fpm"/>
                                     <constraint firstAttribute="width" constant="100" id="NSC-P5-Gam"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0Te-Cx-6Lw"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Rg9-iP-QAh" firstAttribute="top" secondItem="qQP-8G-0ns" secondAttribute="bottom" constant="33" id="3gh-sO-0z3"/>
+                            <constraint firstItem="ITA-oX-n6U" firstAttribute="centerY" secondItem="Rg9-iP-QAh" secondAttribute="centerY" id="9ki-ei-V8L"/>
                             <constraint firstItem="Rg9-iP-QAh" firstAttribute="centerX" secondItem="cL5-BJ-bM4" secondAttribute="centerX" id="CLo-XL-fLy"/>
                             <constraint firstAttribute="trailing" secondItem="Q0r-RX-kjF" secondAttribute="trailing" id="JcW-ha-gGL"/>
+                            <constraint firstItem="ITA-oX-n6U" firstAttribute="centerX" secondItem="Rg9-iP-QAh" secondAttribute="centerX" id="WnM-Fi-kkq"/>
                             <constraint firstItem="Q0r-RX-kjF" firstAttribute="top" secondItem="cL5-BJ-bM4" secondAttribute="top" id="hom-Wd-qjw"/>
                             <constraint firstItem="Q0r-RX-kjF" firstAttribute="leading" secondItem="cL5-BJ-bM4" secondAttribute="leading" id="k3h-af-jrY"/>
                             <constraint firstItem="J8f-ym-Yry" firstAttribute="top" secondItem="Q0r-RX-kjF" secondAttribute="bottom" id="oy4-MJ-PVM"/>
+                            <constraint firstItem="ITA-oX-n6U" firstAttribute="top" secondItem="qQP-8G-0ns" secondAttribute="bottom" constant="40" id="wUi-WU-zQI"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="wUi-WU-zQI"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="clearFilterBtn" destination="F45-Ya-d3X" id="1bc-KS-sfJ"/>
@@ -1156,7 +1195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQw-6b-gSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1914" y="578"/>
+            <point key="canvasLocation" x="1914" y="560"/>
         </scene>
         <!--Distance DetailsVC-->
         <scene sceneID="BKf-gR-1GY">
@@ -1368,7 +1407,7 @@
         <image name="AppBG" width="1204" height="2133"/>
         <image name="FacebookIcon" width="2000" height="2000"/>
         <image name="discountsTabBar" width="25" height="25"/>
-        <image name="filtro" width="500" height="500"/>
+        <image name="filtro" width="1000" height="1000"/>
         <image name="icon" width="624" height="609"/>
         <image name="infoTabBar" width="25" height="25"/>
         <image name="mapa" width="553" height="305"/>
@@ -1377,8 +1416,8 @@
         <image name="starFull" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1mC-kq-p5m"/>
-        <segue reference="xEt-Dk-CWg"/>
-        <segue reference="Bhf-3X-4fg"/>
+        <segue reference="iTR-Qo-URH"/>
+        <segue reference="UKt-za-smo"/>
+        <segue reference="LaT-oV-7HM"/>
     </inferredMetricsTieBreakers>
 </document>

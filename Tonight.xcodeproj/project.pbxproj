@@ -30,6 +30,7 @@
 		A7E79F7A1CBDF95600271921 /* DiscountsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E79F791CBDF95600271921 /* DiscountsVC.swift */; };
 		A7E79F7C1CBDF98D00271921 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E79F7B1CBDF98D00271921 /* Place.swift */; };
 		A7E79F801CBDFB0000271921 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E79F7F1CBDFB0000271921 /* UserProfileVC.swift */; };
+		A7E79F821CBE233300271921 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E79F811CBE233300271921 /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		A7E79F791CBDF95600271921 /* DiscountsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountsVC.swift; sourceTree = "<group>"; };
 		A7E79F7B1CBDF98D00271921 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		A7E79F7F1CBDFB0000271921 /* UserProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
+		A7E79F811CBE233300271921 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				A75E166D1CBB6C280076EF9D /* MyButton.swift */,
 				A75E16681CBB61B70076EF9D /* BoxView.swift */,
 				A75E16711CBC6FBA0076EF9D /* PlacesTableViewCell.swift */,
+				A7E79F811CBE233300271921 /* CircleView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				A7E79F721CBDF8DD00271921 /* RateDetailsVC.swift in Sources */,
 				A7E79F781CBDF93800271921 /* distanceDetailsVC.swift in Sources */,
 				A75E16521CBB1B630076EF9D /* ViewController.swift in Sources */,
+				A7E79F821CBE233300271921 /* CircleView.swift in Sources */,
 				A75E16701CBC6E6B0076EF9D /* PlacesVC.swift in Sources */,
 				A7E79F7A1CBDF95600271921 /* DiscountsVC.swift in Sources */,
 				A75E16501CBB1B630076EF9D /* AppDelegate.swift in Sources */,
